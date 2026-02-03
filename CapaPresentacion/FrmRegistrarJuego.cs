@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class FrmRegistrarEmpleado : Form
+    public partial class FrmRegistrarJuego : Form
     {
-        public FrmRegistrarEmpleado()
+        public FrmRegistrarJuego()
         {
             InitializeComponent();
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }

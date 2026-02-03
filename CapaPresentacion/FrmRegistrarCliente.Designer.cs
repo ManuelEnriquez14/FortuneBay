@@ -36,15 +36,15 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
-            this.txtapellidos = new System.Windows.Forms.TextBox();
+            this.txtemail = new System.Windows.Forms.TextBox();
+            this.txtfechanac = new System.Windows.Forms.TextBox();
             this.txtdocumento = new System.Windows.Forms.TextBox();
-            this.txtrfc = new System.Windows.Forms.TextBox();
             this.txttelefono = new System.Windows.Forms.TextBox();
             this.rbtactivo = new System.Windows.Forms.RadioButton();
             this.rbtinactivo = new System.Windows.Forms.RadioButton();
             this.btnguardar = new System.Windows.Forms.Button();
             this.btncancelar = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtidcliente = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +55,6 @@
             this.label1.Size = new System.Drawing.Size(149, 16);
             this.label1.TabIndex = 0;
             this.label1.Text = "Registrar Nuevo Cliente";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -65,25 +64,24 @@
             this.label2.Size = new System.Drawing.Size(56, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(294, 90);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 16);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 2;
-            this.label3.Text = "RFC";
+            this.label3.Text = "Documento";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(42, 170);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 16);
+            this.label4.Size = new System.Drawing.Size(41, 16);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Apellidos";
+            this.label4.Text = "Email";
             // 
             // label5
             // 
@@ -99,9 +97,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(42, 243);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 16);
+            this.label6.Size = new System.Drawing.Size(132, 16);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Documento";
+            this.label6.Text = "Fecha de nacimiento";
             // 
             // label7
             // 
@@ -119,26 +117,26 @@
             this.txtnombre.Size = new System.Drawing.Size(230, 22);
             this.txtnombre.TabIndex = 7;
             // 
-            // txtapellidos
+            // txtemail
             // 
-            this.txtapellidos.Location = new System.Drawing.Point(45, 199);
-            this.txtapellidos.Name = "txtapellidos";
-            this.txtapellidos.Size = new System.Drawing.Size(227, 22);
-            this.txtapellidos.TabIndex = 8;
+            this.txtemail.Location = new System.Drawing.Point(45, 199);
+            this.txtemail.Name = "txtemail";
+            this.txtemail.Size = new System.Drawing.Size(227, 22);
+            this.txtemail.TabIndex = 8;
+            // 
+            // txtfechanac
+            // 
+            this.txtfechanac.Location = new System.Drawing.Point(45, 278);
+            this.txtfechanac.Name = "txtfechanac";
+            this.txtfechanac.Size = new System.Drawing.Size(227, 22);
+            this.txtfechanac.TabIndex = 9;
             // 
             // txtdocumento
             // 
-            this.txtdocumento.Location = new System.Drawing.Point(45, 278);
+            this.txtdocumento.Location = new System.Drawing.Point(294, 118);
             this.txtdocumento.Name = "txtdocumento";
-            this.txtdocumento.Size = new System.Drawing.Size(227, 22);
-            this.txtdocumento.TabIndex = 9;
-            // 
-            // txtrfc
-            // 
-            this.txtrfc.Location = new System.Drawing.Point(294, 118);
-            this.txtrfc.Name = "txtrfc";
-            this.txtrfc.Size = new System.Drawing.Size(211, 22);
-            this.txtrfc.TabIndex = 10;
+            this.txtdocumento.Size = new System.Drawing.Size(211, 22);
+            this.txtdocumento.TabIndex = 10;
             // 
             // txttelefono
             // 
@@ -187,28 +185,28 @@
             this.btncancelar.Text = "&Cancelar";
             this.btncancelar.UseVisualStyleBackColor = true;
             // 
-            // textBox6
+            // txtidcliente
             // 
-            this.textBox6.Location = new System.Drawing.Point(158, 84);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 16;
-            this.textBox6.Visible = false;
+            this.txtidcliente.Location = new System.Drawing.Point(158, 84);
+            this.txtidcliente.Name = "txtidcliente";
+            this.txtidcliente.Size = new System.Drawing.Size(100, 22);
+            this.txtidcliente.TabIndex = 16;
+            this.txtidcliente.Visible = false;
             // 
             // FrmRegistrarCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(603, 403);
-            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.txtidcliente);
             this.Controls.Add(this.btncancelar);
             this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.rbtinactivo);
             this.Controls.Add(this.rbtactivo);
             this.Controls.Add(this.txttelefono);
-            this.Controls.Add(this.txtrfc);
             this.Controls.Add(this.txtdocumento);
-            this.Controls.Add(this.txtapellidos);
+            this.Controls.Add(this.txtfechanac);
+            this.Controls.Add(this.txtemail);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -217,8 +215,10 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmRegistrarCliente";
             this.Text = "FrmRegistrarCliente";
+            this.Load += new System.EventHandler(this.FrmRegistrarCliente_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,15 +233,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox txtnombre;
-        private System.Windows.Forms.TextBox txtapellidos;
-        private System.Windows.Forms.TextBox txtdocumento;
-        private System.Windows.Forms.TextBox txtrfc;
-        private System.Windows.Forms.TextBox txttelefono;
-        private System.Windows.Forms.RadioButton rbtactivo;
-        private System.Windows.Forms.RadioButton rbtinactivo;
         private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Button btncancelar;
-        private System.Windows.Forms.TextBox textBox6;
+        public System.Windows.Forms.TextBox txtnombre;
+        public System.Windows.Forms.TextBox txtemail;
+        public System.Windows.Forms.TextBox txtfechanac;
+        public System.Windows.Forms.TextBox txtdocumento;
+        public System.Windows.Forms.TextBox txttelefono;
+        public System.Windows.Forms.RadioButton rbtactivo;
+        public System.Windows.Forms.RadioButton rbtinactivo;
+        public System.Windows.Forms.TextBox txtidcliente;
     }
 }
