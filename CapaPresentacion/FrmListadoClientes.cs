@@ -73,7 +73,7 @@ namespace CapaPresentacion
 
             form.Edit = true;
 
-            form.txtidcliente.Text = this.dlistado.CurrentRow.Cells["idcliente"].Value.ToString();
+            form.txtidcliente.Text = this.dlistado.CurrentRow.Cells["id"].Value.ToString();
             form.txtnombre.Text = this.dlistado.CurrentRow.Cells["nombre"].Value.ToString();
             form.txttelefono.Text = this.dlistado.CurrentRow.Cells["telefono"].Value.ToString();
             form.txtfechanac.Text = this.dlistado.CurrentRow.Cells["fecha_nac"].Value.ToString();
@@ -103,11 +103,10 @@ namespace CapaPresentacion
                 opcion = MessageBox.Show("¿Realmente desea eliminar el(los) registro(s)?", "Sistema de ventas", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (dlistado.SelectedRows.Count > 0)
                 {
-                    string idcliente = dlistado.CurrentRow.Cells["idcliente"].Value.ToString();
+                    string idcliente = dlistado.SelectedRows[0].Cells["id"].Value.ToString();
                     CNCliente.Eliminar(Convert.ToInt32(idcliente));
 
-                    MessageBox.Show("Registro(s) eliminado(s) correctamente", "Sistema de ventas", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
+                    MessageBox.Show("Registro eliminado correctamente");
                     Mostrar();
                 }
                 Mostrar();
@@ -123,5 +122,7 @@ namespace CapaPresentacion
         {
 
         }
+
+        
     }
 }

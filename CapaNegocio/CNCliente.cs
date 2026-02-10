@@ -20,7 +20,7 @@ namespace CapaNegocio
             return Datos.Listar();
         }
 
-        public static string Registrar(string nombre, string fecha_nac, string documento, string telefono, string estatus, string email)
+        public static string Registrar(string nombre, DateTime fecha_nac, string documento, string telefono, bool estatus, string email)
         {
             CDCliente Datos = new CDCliente();
 
@@ -34,15 +34,16 @@ namespace CapaNegocio
 
         }
 
-        public static string Editar(int idClinete, string nombre, string documento, string telefono, string estatus, string email)
+        public static string Editar(int idClinete, string nombre, string documento, DateTime fecha_nac, string telefono, bool estatus, string email)
         {
             CDCliente Datos = new CDCliente();
             Datos.id = idClinete;
             Datos.nombre = nombre;
             Datos.documento = documento ;
-            Datos.fecha_nac = telefono;
+            Datos.fecha_nac = fecha_nac;
             Datos.estatus = estatus;
             Datos.email = email;
+            Datos.telefono = telefono;
             return Datos.Editar(Datos);
 
         }

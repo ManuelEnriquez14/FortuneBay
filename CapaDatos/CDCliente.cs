@@ -13,11 +13,11 @@ namespace CapaDatos
     {
         public int id { get; set; }
         public string nombre { get; set; }
-        public string fecha_nac { get; set; }
+        public DateTime fecha_nac { get; set; }
         public string documento { get; set; }
         public string telefono { get; set; }
         public string email { get; set; }
-        public string estatus { get; set; }
+        public bool estatus { get; set; }
 
         public string Buscar {  get; set; }
 
@@ -61,7 +61,6 @@ namespace CapaDatos
                 SqlCommand Cmd = new SqlCommand("sp_registrar_cliente", conexion);
                 Cmd.CommandType = CommandType.StoredProcedure;
 
-                Cmd.Parameters.AddWithValue("@idcliente", SqlDbType.Int).Direction = ParameterDirection.Output;
                 Cmd.Parameters.AddWithValue("@nombre", cli.nombre);
                 Cmd.Parameters.AddWithValue("@fecha_nac", cli.fecha_nac);
                 Cmd.Parameters.AddWithValue("@email", cli.email);
@@ -96,7 +95,7 @@ namespace CapaDatos
                 SqlCommand Cmd = new SqlCommand("sp_editar_cliente", conexion);
                 Cmd.CommandType = CommandType.StoredProcedure;
 
-                Cmd.Parameters.AddWithValue("@idcliente", cli.id);
+                Cmd.Parameters.AddWithValue("@id", cli.id);
                 Cmd.Parameters.AddWithValue("@nombre", cli.nombre);
                 Cmd.Parameters.AddWithValue("@fecha_nac", cli.fecha_nac);
                 Cmd.Parameters.AddWithValue("@email", cli.email);
