@@ -11,13 +11,13 @@ namespace CapaNegocio
 {
     public class CNJuego
     {
-        public DataTable Listar()
+        public static DataTable Listar()
         {
             CDJuego Datos = new CDJuego();
             return Datos.Listar();
         }
 
-        public string Registrar(string nombre, string tipo)
+        public static string Registrar(string nombre, string tipo)
         {
             CDJuego Datos = new CDJuego();
 
@@ -27,7 +27,7 @@ namespace CapaNegocio
             return Datos.Registrar(Datos);
         }
 
-        public string Editar(int idJuego, string nombre, string tipo)
+        public static string Editar(int idJuego, string nombre, string tipo)
         {
             CDJuego Datos = new CDJuego();
 
@@ -38,7 +38,7 @@ namespace CapaNegocio
             return Datos.Editar(Datos);
         }
 
-        public string Eliminar(int idJuego)
+        public static string Eliminar(int idJuego)
         {
             CDJuego Datos = new CDJuego();
             Datos.IdJuego = idJuego;
@@ -46,7 +46,7 @@ namespace CapaNegocio
             return Datos.Eliminar(Datos);
         }
 
-        public DataTable BuscarJuegoNombre(string nombrejuego)
+        public static DataTable BuscarJuegoNombre(string nombrejuego)
         {
             CDJuego Datos = new CDJuego();
             Datos.buscar = nombrejuego;
@@ -54,7 +54,7 @@ namespace CapaNegocio
             return Datos.BuscarJuegoNombre(Datos);
         }
 
-        public DataTable BuscarJuegoTipo(string tipojuego)
+        public static DataTable BuscarJuegoTipo(string tipojuego)
         {
             CDJuego Datos = new CDJuego();
             Datos.buscar = tipojuego;

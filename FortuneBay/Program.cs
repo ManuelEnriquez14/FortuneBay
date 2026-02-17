@@ -16,7 +16,7 @@ namespace FortuneBay
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CapaPresentacion.FrmListadoClientes());
+            Application.Run(new CapaPresentacion.FrmListadoJuegos());
         }
     }
 }

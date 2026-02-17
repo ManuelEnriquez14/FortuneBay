@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtinformes = new System.Windows.Forms.Button();
             this.btneliminar = new System.Windows.Forms.Button();
             this.btneditar = new System.Windows.Forms.Button();
             this.btnnuevo = new System.Windows.Forms.Button();
@@ -40,7 +41,6 @@
             this.rbtndni = new System.Windows.Forms.RadioButton();
             this.rbtnnombre = new System.Windows.Forms.RadioButton();
             this.txtbuscar = new System.Windows.Forms.TextBox();
-            this.txtinformes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlistado)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -71,6 +71,16 @@
             this.panel1.Size = new System.Drawing.Size(845, 536);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // txtinformes
+            // 
+            this.txtinformes.Location = new System.Drawing.Point(18, 490);
+            this.txtinformes.Name = "txtinformes";
+            this.txtinformes.Size = new System.Drawing.Size(75, 23);
+            this.txtinformes.TabIndex = 8;
+            this.txtinformes.Text = "Informes";
+            this.txtinformes.UseVisualStyleBackColor = true;
+            this.txtinformes.Click += new System.EventHandler(this.txtinformes_Click);
             // 
             // btneliminar
             // 
@@ -171,16 +181,6 @@
             this.txtbuscar.Name = "txtbuscar";
             this.txtbuscar.Size = new System.Drawing.Size(420, 22);
             this.txtbuscar.TabIndex = 1;
-            // 
-            // txtinformes
-            // 
-            this.txtinformes.Location = new System.Drawing.Point(18, 490);
-            this.txtinformes.Name = "txtinformes";
-            this.txtinformes.Size = new System.Drawing.Size(75, 23);
-            this.txtinformes.TabIndex = 8;
-            this.txtinformes.Text = "Informes";
-            this.txtinformes.UseVisualStyleBackColor = true;
-            this.txtinformes.Click += new System.EventHandler(this.txtinformes_Click);
             // 
             // FrmListadoClientes
             // 

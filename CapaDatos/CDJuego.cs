@@ -57,7 +57,6 @@ namespace CapaDatos
                 SqlCommand Cmd = new SqlCommand("sp_registrar_juego", conexion);
                 Cmd.CommandType = CommandType.StoredProcedure;
 
-                Cmd.Parameters.AddWithValue("@juego_id", SqlDbType.Int).Direction = ParameterDirection.Output;
                 Cmd.Parameters.AddWithValue("@nombre", cli.Nombre);
                 Cmd.Parameters.AddWithValue("@tipo", cli.Tipo);
 

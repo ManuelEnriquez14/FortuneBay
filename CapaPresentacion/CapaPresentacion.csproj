@@ -44,6 +44,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmListadoJuegos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoJuegos.Designer.cs">
+      <DependentUpon>FrmListadoJuegos.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSesiones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +101,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmListadoJuegos.resx">
+      <DependentUpon>FrmListadoJuegos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
