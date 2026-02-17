@@ -42,8 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CDApuesta.cs" />
+    <Compile Include="CDAuditoria.cs" />
     <Compile Include="CDCliente.cs" />
     <Compile Include="CDEmpleado.cs" />
+    <Compile Include="CDLogin.cs" />
     <Compile Include="CDJuego.cs" />
     <Compile Include="CDPruebaClientes.cs" />
     <Compile Include="CDPruebaExisteSP.cs" />

@@ -44,11 +44,29 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="FrmSesiones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSesiones.Designer.cs">
+      <DependentUpon>FrmSesiones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmListadoClientes.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FrmListadoClientes.Designer.cs">
       <DependentUpon>FrmListadoClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmListadoInformes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmListadoInformes.Designer.cs">
+      <DependentUpon>FrmListadoInformes.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmRegistrarCliente.cs">
       <SubType>Form</SubType>
@@ -77,8 +95,14 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmListadoClientes.resx">
       <DependentUpon>FrmListadoClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmListadoInformes.resx">
+      <DependentUpon>FrmListadoInformes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarCliente.resx">
       <DependentUpon>FrmRegistrarCliente.cs</DependentUpon>
@@ -88,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmRegistrarJuego.resx">
       <DependentUpon>FrmRegistrarJuego.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSesiones.resx">
+      <DependentUpon>FrmSesiones.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

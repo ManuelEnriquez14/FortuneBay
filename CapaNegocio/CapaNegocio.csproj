@@ -43,9 +43,11 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="CNApuesta.cs" />
+    <Compile Include="CNAuditoria.cs" />
     <Compile Include="CNCliente.cs" />
     <Compile Include="CNEmpleado.cs" />
     <Compile Include="CNJuego.cs" />
+    <Compile Include="CNLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

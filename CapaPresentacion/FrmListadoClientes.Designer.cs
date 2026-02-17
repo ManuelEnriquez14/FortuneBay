@@ -40,6 +40,7 @@
             this.rbtndni = new System.Windows.Forms.RadioButton();
             this.rbtnnombre = new System.Windows.Forms.RadioButton();
             this.txtbuscar = new System.Windows.Forms.TextBox();
+            this.txtinformes = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dlistado)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -57,6 +58,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txtinformes);
             this.panel1.Controls.Add(this.btneliminar);
             this.panel1.Controls.Add(this.btneditar);
             this.panel1.Controls.Add(this.btnnuevo);
@@ -170,6 +172,16 @@
             this.txtbuscar.Size = new System.Drawing.Size(420, 22);
             this.txtbuscar.TabIndex = 1;
             // 
+            // txtinformes
+            // 
+            this.txtinformes.Location = new System.Drawing.Point(18, 490);
+            this.txtinformes.Name = "txtinformes";
+            this.txtinformes.Size = new System.Drawing.Size(75, 23);
+            this.txtinformes.TabIndex = 8;
+            this.txtinformes.Text = "Informes";
+            this.txtinformes.UseVisualStyleBackColor = true;
+            this.txtinformes.Click += new System.EventHandler(this.txtinformes_Click);
+            // 
             // FrmListadoClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -204,5 +216,6 @@
         private System.Windows.Forms.TextBox txtbuscar;
         private System.Windows.Forms.RadioButton rbtndni;
         private System.Windows.Forms.RadioButton rbtnnombre;
+        private System.Windows.Forms.Button txtinformes;
     }
 }

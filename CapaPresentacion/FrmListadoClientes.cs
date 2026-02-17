@@ -123,6 +123,11 @@ namespace CapaPresentacion
 
         }
 
-        
+        private void txtinformes_Click(object sender, EventArgs e)
+        {
+            FrmLogin form = new FrmLogin();
+            form.Show();
+            this.Hide();
+        }
     }
 }
